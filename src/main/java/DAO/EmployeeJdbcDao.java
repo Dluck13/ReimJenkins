@@ -63,7 +63,7 @@ public class EmployeeJdbcDao implements EmployeeDao {
 		Connection conn = DBConnection.getConnection();
 		try {
 			Statement stmt = conn.createStatement();
-			String query = "INSERT INTO employees(first_name, last_name, email, phone, user_name, user_password) VALUES('"+employee.getFirstName()+"','"+employee.getLastName()+"','"+employee.getEmail()+"','"+employee.getPhone()+"','"+employee.getUserName()+"','"+employee.getPassword()+"') RETURNING employee_id";
+			String query = "INSERT INTO employees(employee_id,job_title_id,first_name, last_name, email, phone, user_name, user_password) VALUES("+employee.getEmployeeID()+","+employee.getJobTitle()+",'"+employee.getFirstName()+"','"+employee.getLastName()+"','"+employee.getEmail()+"','"+employee.getPhone()+"','"+employee.getUserName()+"','"+employee.getPassword()+"') RETURNING employee_id";
 			ResultSet rs = stmt.executeQuery(query);
 			if(rs.next()) {
 				employee.setEmployeeID(rs.getInt(1));
@@ -93,25 +93,25 @@ public class EmployeeJdbcDao implements EmployeeDao {
 		return employee;
 	}
 
-	@Override
-	public Employee deleteEmployee(int employeeID) throws SystemException {
-		LOG.info("Entered deleteEmployee() in DAO");
-		Employee employeePojo = null;
-		Connection conn = DBConnection.getConnection();
-		try {
-			Statement stmt = conn.createStatement();
-			employeePojo = fetchAEmployee(employeeID);
-			System.out.println(employeePojo);
-			String query = "DELETE FROM employees WHERE employee_id="+employeeID;
-			
-			int rows = stmt.executeUpdate(query);
-			System.out.println(rows);
-		} catch (SQLException e) {
-			throw new SystemException();
-		}
-		LOG.info("Exited deleteEmployee() in DAO");
-		return employeePojo;
-	}
+//	@Override
+//	public Employee deleteEmployee(int employeeID) throws SystemException {
+//		LOG.info("Entered deleteEmployee() in DAO");
+//		Employee employeePojo = null;
+//		Connection conn = DBConnection.getConnection();
+//		try {
+//			Statement stmt = conn.createStatement();
+//			employeePojo = fetchAEmployee(employeeID);
+//			System.out.println(employeePojo);
+//			String query = "DELETE FROM employees WHERE employee_id="+employeeID;
+//			
+//			int rows = stmt.executeUpdate(query);
+//			System.out.println(rows);
+//		} catch (SQLException e) {
+//			throw new SystemException();
+//		}
+//		LOG.info("Exited deleteEmployee() in DAO");
+//		return employeePojo;
+//	}
 
 	@Override
 	public Employee fetchAEmployee(int employeeID) throws SystemException {

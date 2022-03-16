@@ -65,12 +65,12 @@ public class Project1Main {
 		
 		
 		// all employees
-		myServer.get("/AllEmployees", (ctx)->{
+		myServer.get("/AllEmployeess", (ctx)->{
 		ctx.json(employeeService.fetchAllEmployees());
 		});
 		
 		//fetch employee
-		myServer.get("/GetEmployee/{employee_id}", (ctx)->{
+		myServer.get("/GetEmployeess/{employee_id}", (ctx)->{
 			//retrieve the path param value,specify path param key
 			String empId = ctx.pathParam("employee_id");
 			System.out.println(empId);
@@ -80,17 +80,17 @@ public class Project1Main {
 			ctx.json(fetchedEmployee);
 		});
 		//delete an employee
-		myServer.delete("/DeleteEmployees/{bid1}", (ctx)->{
-			//retrieve the path param value,specify path param key
-			String empId = ctx.pathParam("bid1");
-			//tell service layer to delete
-			Employee deletedEmp = employeeService.deleteEmployee(Integer.parseInt(empId));
-			//return 
-			//ctx.json(deletedEmp);
-			});
-		
+//		myServer.delete("/DeleteEmployeess/{bid1}", (ctx)->{
+//			//retrieve the path param value,specify path param key
+//			String empId = ctx.pathParam("bid1");
+//			//tell service layer to delete
+//			Employee deletedEmp = employeeService.deleteEmployee(Integer.parseInt(empId));
+//			//return 
+//			//ctx.json(deletedEmp);
+//			});
+//		
 		//add a employee
-		myServer.post("/AddEmployees", (ctx)->{
+		myServer.post("/AddEmployeess", (ctx)->{
 			//converts json to pojo
 		Employee newEmp = ctx.bodyAsClass(Employee.class);
 		Employee returnedEmp = employeeService.addEmployee(newEmp);
