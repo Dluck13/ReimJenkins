@@ -84,7 +84,7 @@ public class EmployeeJdbcDao implements EmployeeDao {
 		Connection conn = DBConnection.getConnection();
 		try {
 			Statement stmt = conn.createStatement();
-			String query = "UPDATE employees SET email='"+employee.getEmail()+"' WHERE employee_id="+employee.getEmployeeID();
+			String query = "UPDATE employees SET (first_name='"+employee.getFullName()+"',email='"+employee.getEmail()+"', phone='"+employee.getPhone()+"') WHERE employee_id="+employee.getEmployeeID();
 			int rows = stmt.executeUpdate(query);
 		} catch (SQLException e) {
 			throw new SystemException();
