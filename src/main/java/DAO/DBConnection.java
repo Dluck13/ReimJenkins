@@ -17,12 +17,14 @@ public class DBConnection {
 		password = "1234";
 		try {
 			Class.forName("org.postgresql.Driver");
-		} catch(Exception e) {
+			System.out.println("Driver loaded...........");
+		} catch(ClassNotFoundException e) {
 			e.printStackTrace();
 		}
 		try {
 			log.info("Estabilishing DB connection");
 			conn = DriverManager.getConnection(connectionString,userName,password);
+			System.out.println("connection established");
 		} catch (SQLException e) {
 			//
 			try
