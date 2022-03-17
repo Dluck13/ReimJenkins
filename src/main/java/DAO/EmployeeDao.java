@@ -16,8 +16,8 @@ public interface EmployeeDao {
 		// Update
 		Employee updateEmployee(Employee employee)throws SystemException;
 		// Delete
-//		Employee deleteEmployee(int employeeID)throws SystemException;
-		// Read - fetch a employee
+		Employee deleteEmployee(int employeeID)throws SystemException;
+//		 Read - fetch a employee
 		Employee fetchAEmployee(int employeeID)throws SystemException;
 		
 		Reimbursement submitRequest(Reimbursement reimbursement)throws SystemException;

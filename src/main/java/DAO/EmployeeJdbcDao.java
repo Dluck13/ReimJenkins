@@ -94,25 +94,25 @@ public class EmployeeJdbcDao implements EmployeeDao {
 		return employee;
 	}
 
-//	@Override
-//	public Employee deleteEmployee(int employeeID) throws SystemException {
-//		LOG.info("Entered deleteEmployee() in DAO");
-//		Employee employeePojo = null;
-//		Connection conn = DBConnection.getConnection();
-//		try {
-//			Statement stmt = conn.createStatement();
-//			employeePojo = fetchAEmployee(employeeID);
-//			System.out.println(employeePojo);
-//			String query = "DELETE FROM employees WHERE employee_id="+employeeID;
-//			
-//			int rows = stmt.executeUpdate(query);
-//			System.out.println(rows);
-//		} catch (SQLException e) {
-//			throw new SystemException();
-//		}
-//		LOG.info("Exited deleteEmployee() in DAO");
-//		return employeePojo;
-//	}
+	@Override
+	public Employee deleteEmployee(int employeeID) throws SystemException {
+		LOG.info("Entered deleteEmployee() in DAO");
+		Employee employeePojo = null;
+		Connection conn = DBConnection.getConnection();
+		try {
+			Statement stmt = conn.createStatement();
+			employeePojo = fetchAEmployee(employeeID);
+			System.out.println(employeePojo);
+			String query = "DELETE FROM employees WHERE employee_id="+employeeID;
+			
+			int rows = stmt.executeUpdate(query);
+			System.out.println(rows);
+		} catch (SQLException e) {
+			throw new SystemException();
+		}
+		LOG.info("Exited deleteEmployee() in DAO");
+		return employeePojo;
+	}
 
 	@Override
 	public Employee fetchAEmployee(int employeeID) throws SystemException {
