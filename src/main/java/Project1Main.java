@@ -60,6 +60,24 @@ public class Project1Main {
 		});
 		
 		
+		myServer.post("/RequestsSubmit", (ctx)->{
+			Reimbursement newRequest = ctx.bodyAsClass(Reimbursement.class);
+			Reimbursement returnedRequest = employeeService.submitRequest(newRequest);
+			ctx.json(returnedRequest);
+			});
+		
+		//fetch request
+		myServer.get("/RequestsGet/{rid}", (ctx)->{
+			//retrieve the path param value,specify path param key
+			String reqId = ctx.pathParam("rid");
+			System.out.println(reqId);
+			//tell service layer to fetch emplo yee
+			Reimbursement fetchedRequest = employeeService.fetchARequest(Integer.parseInt(reqId));
+			//return
+			ctx.json(fetchedRequest);
+		});
+		
+		
 		
 		
 		
@@ -99,12 +117,14 @@ public class Project1Main {
 		
 		//update a 
 		
-		myServer.put("/UpdateEmployees", (ctx)->{
+		myServer.put("/UpdateEmployeess", (ctx)->{
 			
 		Employee newUpdate = ctx.bodyAsClass(Employee.class);
 		Employee returnedUpdate = employeeService.updateEmployee(newUpdate);
 		ctx.json(returnedUpdate);
 		});
+		
+		
 		
 		// this is the catch block for SystemException
 				myServer.exception(SystemException.class,(se, ctx)->{
@@ -120,6 +140,10 @@ public class Project1Main {
 					error.put("datetime", LocalDateTime.now()+"");
 					ctx.json(error);
 				} );
+				
+				
+				
+				
 				
 				
 

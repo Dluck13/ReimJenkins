@@ -5,6 +5,7 @@ import java.util.List;
 import Exceptions.EmployeeNotFoundException;
 import Exceptions.SystemException;
 import POJO.Employee;
+import POJO.Reimbursement;
 
 public interface EmployeeDao {
 	
@@ -18,6 +19,12 @@ public interface EmployeeDao {
 //		Employee deleteEmployee(int employeeID)throws SystemException;
 		// Read - fetch a employee
 		Employee fetchAEmployee(int employeeID)throws SystemException;
+		
+		Reimbursement submitRequest(Reimbursement reimbursement)throws SystemException;
+		
+		Reimbursement fetchARequest(int reimbursementID)throws SystemException;
+		
+		
 		
 		
 		

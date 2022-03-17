@@ -6,6 +6,7 @@ import DAO.DBConnection;
 import Exceptions.EmployeeNotFoundException;
 import Exceptions.SystemException;
 import POJO.Employee;
+import POJO.Reimbursement;
 
 public interface EmployeeService {
 	// Read - fetch all books
@@ -19,6 +20,10 @@ public interface EmployeeService {
 			// Read - fetch a employee
 			Employee fetchAEmployee(int employeeID)throws SystemException;
 			
+			Reimbursement submitRequest(Reimbursement reimbursement)throws SystemException;
+			
+			Reimbursement fetchARequest(int reimbursementId) throws SystemException;
+			
 			
 			
 			
@@ -28,5 +33,6 @@ public interface EmployeeService {
 			default void exitApplication()throws SystemException{
 				DBConnection.closeConnection();
 			}
+			
 
 }

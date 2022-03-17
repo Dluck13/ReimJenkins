@@ -7,6 +7,7 @@ import DAO.EmployeeJdbcDao;
 import Exceptions.EmployeeNotFoundException;
 import Exceptions.SystemException;
 import POJO.Employee;
+import POJO.Reimbursement;
 
 public class EmployeeServiceImpl implements EmployeeService {
 	
@@ -44,6 +45,16 @@ public class EmployeeServiceImpl implements EmployeeService {
 	public Employee fetchAEmployee(int employeeID) throws SystemException {
 		// TODO Auto-generated method stub
 		return employeeDao.fetchAEmployee(employeeID);
+	}
+	@Override
+	public Reimbursement submitRequest(Reimbursement reimbursement)throws SystemException{
+		return employeeDao.submitRequest(reimbursement);
+	}
+
+	@Override
+	public Reimbursement fetchARequest(int reimbursementID) throws SystemException {
+		// TODO Auto-generated method stub
+		return employeeDao.fetchARequest(reimbursementID);
 	}
 
 }

@@ -5,9 +5,11 @@ import java.math.BigDecimal;
 public class Reimbursement {
 	int reimbursementID = 0;
 	int statusID = 0;
+	int typeId = 0;
 	int employeeID = 0;
 	String employee = "";
 	String status = "";
+	
 	String expenseType = "";
 	String merchant = "";
 
@@ -18,6 +20,35 @@ public class Reimbursement {
 	String dateSubmitted = "";
 	String dateUpdated = "";
 	
+	
+	
+	
+	public Reimbursement() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	
+	
+	public Reimbursement(int reimbursementID, int statusID, int typeId, String employee, String status,
+			String expenseType, String merchant, BigDecimal amount, String details, String currentComment,
+			String dateOfTransaction, String dateSubmitted, String dateUpdated) {
+		super();
+		this.reimbursementID = reimbursementID;
+		this.statusID = statusID;
+		this.typeId = typeId;
+		this.employee = employee;
+		this.status = status;
+		this.expenseType = expenseType;
+		this.merchant = merchant;
+		this.amount = amount;
+		this.details = details;
+		this.currentComment = currentComment;
+		this.dateOfTransaction = dateOfTransaction;
+		this.dateSubmitted = dateSubmitted;
+		this.dateUpdated = dateUpdated;
+	}
+
+
 	public int getReimbursementID() {
 		return reimbursementID;
 	}
@@ -96,5 +127,12 @@ public class Reimbursement {
 	public void setMerchant(String merchant) {
 		this.merchant = merchant;
 	}
+	public int getTypeId() {
+		// TODO Auto-generated method stub
+		return typeId;
+	}
+	public void setTypeId(int typeId) {
+		this.typeId = typeId;
 	
+}
 }
