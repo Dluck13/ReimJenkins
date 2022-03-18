@@ -41,9 +41,15 @@ public class EmployeeServiceImpl implements EmployeeService {
 	}
 
 	@Override
+<<<<<<< Updated upstream
 	public Employee fetchAEmployee(int employeeID) throws SystemException {
 		// TODO Auto-generated method stub
 		return employeeDao.fetchAEmployee(employeeID);
+=======
+	public Reimbursement fetchARequest(int employeeID) throws SystemException {
+		// TODO Auto-generated method stub
+		return employeeDao.fetchARequest(employeeID);
+>>>>>>> Stashed changes
 	}
 
 }

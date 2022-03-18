@@ -139,4 +139,69 @@ public class EmployeeJdbcDao implements EmployeeDao {
 		return fetchEmp;
 	}
 
+<<<<<<< Updated upstream
 }
+=======
+	@Override
+	public Reimbursement submitRequest(Reimbursement reimbursement) throws SystemException {
+		LOG.info("Entered createNewRequest() in DAO");
+
+		Reimbursement requestPojo2 = null;
+
+		Connection conn = DBConnection.getConnection();
+
+		try {
+//			
+
+			Statement stmt = conn.createStatement();
+
+			// insert transaction
+			String query = "INSERT INTO reimbursements(employee_id, status_id, type_id, date_of_transaction, amount, details, merchant) VALUES("+reimbursement.getEmployeeID()+","+reimbursement.getStatusID()+","+reimbursement.getTypeId()+",'"+reimbursement.getDateOfTransaction()+"',"+reimbursement.getAmount()+",'"+reimbursement.getDetails()+"','"+reimbursement.getMerchant()+"') RETURNING reimbursement_id";
+			ResultSet rsRequest = stmt.executeQuery(query);
+
+			if (rsRequest.next()) {
+				reimbursement.setReimbursementID(rsRequest.getInt(1));
+						
+						
+						
+			}
+
+		} catch (SQLException e) {
+			
+		throw new SystemException();
+		}
+
+		LOG.info("Exited submitrequest() in DAO");
+		return requestPojo2;
+	}
+
+	@Override
+	public Reimbursement fetchARequest(int employeeID) throws SystemException {
+		LOG.info("Entered fetchARequest() in DAO");
+		Reimbursement fetchReq = null;
+		Connection conn = DBConnection.getConnection();
+		
+		try {
+			Statement stmt = conn.createStatement();
+			String query = "SELECT * FROM reimbursements WHERE employee_id="+employeeID;
+			ResultSet results = stmt.executeQuery(query);
+			if(results.next()) {
+						fetchReq = new Reimbursement();
+						fetchReq.setEmployeeID(results.getInt(1));
+						fetchReq.setStatusID(results.getInt(2));
+						fetchReq.setTypeId(results.getInt(3));
+						fetchReq.setDateOfTransaction(results.getString(4));
+						fetchReq.setAmount(results.getBigDecimal(5));
+						fetchReq.setDetails(results.getString(6));
+			}
+		} catch (SQLException e) {
+			throw new SystemException();
+		}
+		LOG.info("Exited fetchARequest() in DAO");
+		return fetchReq;
+	}
+	}
+	
+
+
+>>>>>>> Stashed changes

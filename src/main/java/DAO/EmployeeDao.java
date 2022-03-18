@@ -19,6 +19,15 @@ public interface EmployeeDao {
 		// Read - fetch a employee
 		Employee fetchAEmployee(int employeeID)throws SystemException;
 		
+<<<<<<< Updated upstream
+=======
+		Reimbursement submitRequest(Reimbursement reimbursement)throws SystemException;
+		
+		Reimbursement fetchARequest(int employeeID)throws SystemException;
+		
+		
+		
+>>>>>>> Stashed changes
 		
 		
 		

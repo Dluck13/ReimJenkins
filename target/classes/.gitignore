@@ -1,4 +1,15 @@
 /DAO/
+<<<<<<< Updated upstream
 /META-INF/
 /POJO/
 /Service/
+=======
+/Entity/
+/Exceptions/
+/HibernateUtil.class
+/POJO/
+/Project1Main.class
+/ReimbursementMain.class
+/Service/
+/META-INF/
+>>>>>>> Stashed changes

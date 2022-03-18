@@ -60,6 +60,34 @@ public class Project1Main {
 		});
 		
 		
+<<<<<<< Updated upstream
+=======
+		
+		
+		
+		
+		
+//		----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+		
+		
+		myServer.post("/RequestsSubmit", (ctx)->{
+			Reimbursement newRequest = ctx.bodyAsClass(Reimbursement.class);
+			Reimbursement returnedRequest = employeeService.submitRequest(newRequest);
+			ctx.json(returnedRequest);
+			});
+		
+		//fetch request
+		myServer.get("/RequestsGet/{rid}", (ctx)->{
+			//retrieve the path param value,specify path param key
+			String reqId = ctx.pathParam("rid");
+			System.out.println(reqId);
+			//tell service layer to fetch request
+			Reimbursement fetchedRequest = employeeService.fetchARequest(Integer.parseInt(reqId));
+			ctx.json(fetchedRequest);
+		});
+		
+		
+>>>>>>> Stashed changes
 		
 		
 		
