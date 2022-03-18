@@ -58,8 +58,10 @@ public class Project1Main {
 			Employee e = ctx.bodyAsClass(Employee.class);
 			ctx.json(LoginService.login(e));
 		});
+			
 		
-		
+//		----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 		myServer.post("/RequestsSubmit", (ctx)->{
 			Reimbursement newRequest = ctx.bodyAsClass(Reimbursement.class);
 			Reimbursement returnedRequest = employeeService.submitRequest(newRequest);
@@ -71,14 +73,18 @@ public class Project1Main {
 			//retrieve the path param value,specify path param key
 			String reqId = ctx.pathParam("rid");
 			System.out.println(reqId);
-			//tell service layer to fetch emplo yee
+			//tell service layer to fetch request
 			Reimbursement fetchedRequest = employeeService.fetchARequest(Integer.parseInt(reqId));
+
+			//tell service layer to fetch emplo yee
+		
 			//return
+
 			ctx.json(fetchedRequest);
 		});
 		
 		
-		
+
 		
 		
 		

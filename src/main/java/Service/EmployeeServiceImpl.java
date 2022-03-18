@@ -41,20 +41,22 @@ public class EmployeeServiceImpl implements EmployeeService {
 //		return employeeDao.deleteEmployee(employeeID);
 //	}
 
-	@Override
+
 	public Employee fetchAEmployee(int employeeID) throws SystemException {
 		// TODO Auto-generated method stub
-		return employeeDao.fetchAEmployee(employeeID);
+		return employeeDao.fetchAEmployee(employeeID);}
+
+	public Reimbursement fetchARequest(int employeeID) throws SystemException {
+		// TODO Auto-generated method stub
+		return employeeDao.fetchARequest(employeeID);
+
 	}
 	@Override
 	public Reimbursement submitRequest(Reimbursement reimbursement)throws SystemException{
 		return employeeDao.submitRequest(reimbursement);
 	}
 
-	@Override
-	public Reimbursement fetchARequest(int reimbursementID) throws SystemException {
-		// TODO Auto-generated method stub
-		return employeeDao.fetchARequest(reimbursementID);
-	}
+	
+	
 
 }

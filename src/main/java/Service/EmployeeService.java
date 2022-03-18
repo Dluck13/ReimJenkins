@@ -20,10 +20,13 @@ public interface EmployeeService {
 			// Read - fetch a employee
 			Employee fetchAEmployee(int employeeID)throws SystemException;
 			
+
 			Reimbursement submitRequest(Reimbursement reimbursement)throws SystemException;
 			
-			Reimbursement fetchARequest(int reimbursementId) throws SystemException;
+			Reimbursement fetchARequest(int employeeID) throws SystemException;
 			
+
+
 			
 			
 			

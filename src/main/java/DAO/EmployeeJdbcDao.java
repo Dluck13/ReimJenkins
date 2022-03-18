@@ -85,7 +85,7 @@ public class EmployeeJdbcDao implements EmployeeDao {
 		Connection conn = DBConnection.getConnection();
 		try {
 			Statement stmt = conn.createStatement();
-			String query = "UPDATE employees SET email='"+employee.getEmail()+"' WHERE employee_id="+employee.getEmployeeID();
+			String query = "UPDATE employees SET (first_name='"+employee.getFullName()+"',email='"+employee.getEmail()+"', phone='"+employee.getPhone()+"') WHERE employee_id="+employee.getEmployeeID();
 			int rows = stmt.executeUpdate(query);
 		} catch (SQLException e) {
 			throw new SystemException();
@@ -140,6 +140,7 @@ public class EmployeeJdbcDao implements EmployeeDao {
 		return fetchEmp;
 	}
 
+
 	@Override
 	public Reimbursement submitRequest(Reimbursement reimbursement) throws SystemException {
 		LOG.info("Entered createNewRequest() in DAO");
@@ -174,14 +175,22 @@ public class EmployeeJdbcDao implements EmployeeDao {
 	}
 
 	@Override
-	public Reimbursement fetchARequest(int reimbursementID) throws SystemException {
+
+	public Reimbursement fetchARequest(int employeeID) throws SystemException {
+
+	
+
 		LOG.info("Entered fetchARequest() in DAO");
 		Reimbursement fetchReq = null;
 		Connection conn = DBConnection.getConnection();
 		
 		try {
 			Statement stmt = conn.createStatement();
-			String query = "SELECT * FROM reimbursements WHERE reimbursement_id="+reimbursementID;
+
+			String query = "SELECT * FROM reimbursements WHERE employee_id="+employeeID;
+
+			
+
 			ResultSet results = stmt.executeQuery(query);
 			if(results.next()) {
 						fetchReq = new Reimbursement();
@@ -193,12 +202,16 @@ public class EmployeeJdbcDao implements EmployeeDao {
 						fetchReq.setDetails(results.getString(6));
 			}
 		} catch (SQLException e) {
-			throw new NumberFormatException();
+
+			throw new SystemException();
+
+			
+
 		}
 		LOG.info("Exited fetchARequest() in DAO");
 		return fetchReq;
-	}
+	
 	}
 	
 
-
+	}
