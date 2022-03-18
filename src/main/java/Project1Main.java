@@ -58,18 +58,10 @@ public class Project1Main {
 			Employee e = ctx.bodyAsClass(Employee.class);
 			ctx.json(LoginService.login(e));
 		});
-		
-		
-<<<<<<< Updated upstream
-=======
-		
-		
-		
-		
+			
 		
 //		----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-		
-		
+
 		myServer.post("/RequestsSubmit", (ctx)->{
 			Reimbursement newRequest = ctx.bodyAsClass(Reimbursement.class);
 			Reimbursement returnedRequest = employeeService.submitRequest(newRequest);
@@ -83,22 +75,26 @@ public class Project1Main {
 			System.out.println(reqId);
 			//tell service layer to fetch request
 			Reimbursement fetchedRequest = employeeService.fetchARequest(Integer.parseInt(reqId));
+
+			//tell service layer to fetch emplo yee
+		
+			//return
+
 			ctx.json(fetchedRequest);
 		});
 		
 		
->>>>>>> Stashed changes
-		
+
 		
 		
 		
 		// all employees
-		myServer.get("/AllEmployees", (ctx)->{
+		myServer.get("/AllEmployeess", (ctx)->{
 		ctx.json(employeeService.fetchAllEmployees());
 		});
 		
 		//fetch employee
-		myServer.get("/GetEmployee/{employee_id}", (ctx)->{
+		myServer.get("/GetEmployeess/{employee_id}", (ctx)->{
 			//retrieve the path param value,specify path param key
 			String empId = ctx.pathParam("employee_id");
 			System.out.println(empId);
@@ -108,17 +104,17 @@ public class Project1Main {
 			ctx.json(fetchedEmployee);
 		});
 		//delete an employee
-		myServer.delete("/DeleteEmployees/{bid1}", (ctx)->{
-			//retrieve the path param value,specify path param key
-			String empId = ctx.pathParam("bid1");
-			//tell service layer to delete
-			Employee deletedEmp = employeeService.deleteEmployee(Integer.parseInt(empId));
-			//return 
-			//ctx.json(deletedEmp);
-			});
-		
+//		myServer.delete("/DeleteEmployeess/{bid1}", (ctx)->{
+//			//retrieve the path param value,specify path param key
+//			String empId = ctx.pathParam("bid1");
+//			//tell service layer to delete
+//			Employee deletedEmp = employeeService.deleteEmployee(Integer.parseInt(empId));
+//			//return 
+//			//ctx.json(deletedEmp);
+//			});
+//		
 		//add a employee
-		myServer.post("/AddEmployees", (ctx)->{
+		myServer.post("/AddEmployeess", (ctx)->{
 			//converts json to pojo
 		Employee newEmp = ctx.bodyAsClass(Employee.class);
 		Employee returnedEmp = employeeService.addEmployee(newEmp);
@@ -127,12 +123,14 @@ public class Project1Main {
 		
 		//update a 
 		
-		myServer.put("/UpdateEmployees", (ctx)->{
+		myServer.put("/UpdateEmployeess", (ctx)->{
 			
 		Employee newUpdate = ctx.bodyAsClass(Employee.class);
 		Employee returnedUpdate = employeeService.updateEmployee(newUpdate);
 		ctx.json(returnedUpdate);
 		});
+		
+		
 		
 		// this is the catch block for SystemException
 				myServer.exception(SystemException.class,(se, ctx)->{
@@ -148,6 +146,10 @@ public class Project1Main {
 					error.put("datetime", LocalDateTime.now()+"");
 					ctx.json(error);
 				} );
+				
+				
+				
+				
 				
 				
 

@@ -6,6 +6,7 @@ import DAO.DBConnection;
 import Exceptions.EmployeeNotFoundException;
 import Exceptions.SystemException;
 import POJO.Employee;
+import POJO.Reimbursement;
 
 public interface EmployeeService {
 	// Read - fetch all books
@@ -15,17 +16,17 @@ public interface EmployeeService {
 			// Update
 			Employee updateEmployee(Employee employee)throws SystemException;
 			// Delete
-			Employee deleteEmployee(int employeeID)throws SystemException;
+//			Employee deleteEmployee(int employeeID)throws SystemException;
 			// Read - fetch a employee
 			Employee fetchAEmployee(int employeeID)throws SystemException;
 			
-<<<<<<< Updated upstream
-=======
+
 			Reimbursement submitRequest(Reimbursement reimbursement)throws SystemException;
 			
 			Reimbursement fetchARequest(int employeeID) throws SystemException;
 			
->>>>>>> Stashed changes
+
+
 			
 			
 			
@@ -35,5 +36,6 @@ public interface EmployeeService {
 			default void exitApplication()throws SystemException{
 				DBConnection.closeConnection();
 			}
+			
 
 }

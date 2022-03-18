@@ -5,6 +5,7 @@ import java.util.List;
 import Exceptions.EmployeeNotFoundException;
 import Exceptions.SystemException;
 import POJO.Employee;
+import POJO.Reimbursement;
 
 public interface EmployeeDao {
 	
@@ -16,18 +17,21 @@ public interface EmployeeDao {
 		Employee updateEmployee(Employee employee)throws SystemException;
 		// Delete
 		Employee deleteEmployee(int employeeID)throws SystemException;
-		// Read - fetch a employee
+//		 Read - fetch a employee
 		Employee fetchAEmployee(int employeeID)throws SystemException;
 		
-<<<<<<< Updated upstream
-=======
+
 		Reimbursement submitRequest(Reimbursement reimbursement)throws SystemException;
 		
 		Reimbursement fetchARequest(int employeeID)throws SystemException;
 		
 		
 		
->>>>>>> Stashed changes
+
+		
+		
+		
+
 		
 		
 		

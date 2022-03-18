@@ -7,6 +7,7 @@ import DAO.EmployeeJdbcDao;
 import Exceptions.EmployeeNotFoundException;
 import Exceptions.SystemException;
 import POJO.Employee;
+import POJO.Reimbursement;
 
 public class EmployeeServiceImpl implements EmployeeService {
 	
@@ -34,22 +35,28 @@ public class EmployeeServiceImpl implements EmployeeService {
 		return employeeDao.updateEmployee(employee);
 	}
 
-	@Override
-	public Employee deleteEmployee(int employeeID) throws SystemException {
-		// TODO Auto-generated method stub
-		return employeeDao.deleteEmployee(employeeID);
-	}
+//	@Override
+//	public Employee deleteEmployee(int employeeID) throws SystemException {
+//		// TODO Auto-generated method stub
+//		return employeeDao.deleteEmployee(employeeID);
+//	}
 
-	@Override
-<<<<<<< Updated upstream
+
 	public Employee fetchAEmployee(int employeeID) throws SystemException {
 		// TODO Auto-generated method stub
-		return employeeDao.fetchAEmployee(employeeID);
-=======
+		return employeeDao.fetchAEmployee(employeeID);}
+
 	public Reimbursement fetchARequest(int employeeID) throws SystemException {
 		// TODO Auto-generated method stub
 		return employeeDao.fetchARequest(employeeID);
->>>>>>> Stashed changes
+
 	}
+	@Override
+	public Reimbursement submitRequest(Reimbursement reimbursement)throws SystemException{
+		return employeeDao.submitRequest(reimbursement);
+	}
+
+	
+	
 
 }

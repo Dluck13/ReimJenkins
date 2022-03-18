@@ -1398,6 +1398,7 @@
 2022-03-17 00:32:57 INFO  LoginDao:70 - in getRoles Dao Layer
 2022-03-17 00:32:57 INFO  FinanceManagerDao:93 - in getAllReinbursements Dao Layer
 2022-03-17 00:34:17 INFO  EmployeeJdbcDao:178 - Entered fetchARequest() in DAO
+<<<<<<< HEAD
 2022-03-17 00:55:06 INFO  EmployeeJdbcDao:178 - Entered fetchARequest() in DAO
 2022-03-17 00:55:06 INFO  DBConnection:25 - Estabilishing DB connection
 2022-03-17 10:13:37 INFO  FinanceManagerDao:93 - in getAllReinbursements Dao Layer
@@ -1555,3 +1556,5 @@
 2022-03-18 01:04:11 INFO  BasicTypeRegistry:159 - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@7a8406c2
 2022-03-18 01:04:12 INFO  access:47 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@4ef4f627] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
 2022-03-18 01:04:12 INFO  pooling:233 - HHH10001008: Cleaning up connection pool [jdbc:postgresql://localhost:5432/reimbursement_project]
+=======
+>>>>>>> main

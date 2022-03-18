@@ -13,6 +13,7 @@ import org.apache.logging.log4j.Logger;
 import Exceptions.EmployeeNotFoundException;
 import Exceptions.SystemException;
 import POJO.Employee;
+import POJO.Reimbursement;
 
 public class EmployeeJdbcDao implements EmployeeDao {
 	
@@ -63,7 +64,7 @@ public class EmployeeJdbcDao implements EmployeeDao {
 		Connection conn = DBConnection.getConnection();
 		try {
 			Statement stmt = conn.createStatement();
-			String query = "INSERT INTO employees(first_name, last_name, email, phone, user_name, user_password) VALUES('"+employee.getFirstName()+"','"+employee.getLastName()+"','"+employee.getEmail()+"','"+employee.getPhone()+"','"+employee.getUserName()+"','"+employee.getPassword()+"') RETURNING employee_id";
+			String query = "INSERT INTO employees(employee_id,job_title_id,first_name, last_name, email, phone, user_name, user_password) VALUES("+employee.getEmployeeID()+","+employee.getJobTitle()+",'"+employee.getFirstName()+"','"+employee.getLastName()+"','"+employee.getEmail()+"','"+employee.getPhone()+"','"+employee.getUserName()+"','"+employee.getPassword()+"') RETURNING employee_id";
 			ResultSet rs = stmt.executeQuery(query);
 			if(rs.next()) {
 				employee.setEmployeeID(rs.getInt(1));
@@ -139,9 +140,7 @@ public class EmployeeJdbcDao implements EmployeeDao {
 		return fetchEmp;
 	}
 
-<<<<<<< Updated upstream
-}
-=======
+
 	@Override
 	public Reimbursement submitRequest(Reimbursement reimbursement) throws SystemException {
 		LOG.info("Entered createNewRequest() in DAO");
@@ -176,14 +175,22 @@ public class EmployeeJdbcDao implements EmployeeDao {
 	}
 
 	@Override
+
 	public Reimbursement fetchARequest(int employeeID) throws SystemException {
+
+	
+
 		LOG.info("Entered fetchARequest() in DAO");
 		Reimbursement fetchReq = null;
 		Connection conn = DBConnection.getConnection();
 		
 		try {
 			Statement stmt = conn.createStatement();
+
 			String query = "SELECT * FROM reimbursements WHERE employee_id="+employeeID;
+
+			
+
 			ResultSet results = stmt.executeQuery(query);
 			if(results.next()) {
 						fetchReq = new Reimbursement();
@@ -195,13 +202,16 @@ public class EmployeeJdbcDao implements EmployeeDao {
 						fetchReq.setDetails(results.getString(6));
 			}
 		} catch (SQLException e) {
+
 			throw new SystemException();
+
+			
+
 		}
 		LOG.info("Exited fetchARequest() in DAO");
 		return fetchReq;
-	}
+	
 	}
 	
 
-
->>>>>>> Stashed changes
+	}
