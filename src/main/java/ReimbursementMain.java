@@ -1,4 +1,7 @@
 import java.math.BigDecimal;
+import java.text.DateFormat;
+
+import javax.persistence.Query;
 
 import org.hibernate.Session;
 
@@ -6,6 +9,7 @@ import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 
 import Entity.ReimbursementEntity;
+import java.util.List;
 
 public class ReimbursementMain {
 
@@ -16,8 +20,9 @@ public class ReimbursementMain {
 		Session session = sessionFactory.openSession();
 
 		Transaction transaction = session.beginTransaction();
+		System.out.println("begin transaction");
 
-		ReimbursementEntity addNewReim = new ReimbursementEntity(7, 2, 4, 1, "2020-11-11", BigDecimal.ZERO, "hotel",
+		ReimbursementEntity addNewReim = new ReimbursementEntity(0,2, 4, 1, DateFormat.getDateInstance(), BigDecimal.ZERO, "hotel",
 				"expedia");
 
 		session.save(addNewReim);
@@ -28,85 +33,120 @@ public class ReimbursementMain {
 
 		session.close();
 		System.out.println("closed");
+	}
 
 //--------------------------------------------------------------------------------------------------
 
-		SessionFactory sessionFactory1 = HibernateUtil.getSessionFactory();
+	{
+		SessionFactory sessionFactory = HibernateUtil.getSessionFactory();
 
-		Session session1 = sessionFactory1.openSession();
+		Session session = sessionFactory.openSession();
 
-		Transaction transaction1 = session1.beginTransaction();
+		Transaction transaction = session.beginTransaction();
 
-		ReimbursementEntity deleteReim = new ReimbursementEntity(7, 2, 4, 1, "2020-11-11", BigDecimal.ZERO, "hotel",
+		ReimbursementEntity deleteReim = new ReimbursementEntity(7, 2, 4, 1, DateFormat.getDateInstance(), BigDecimal.ZERO, "hotel",
 				"expedia");
 
-		session1.delete(deleteReim);
+		session.delete(deleteReim);
 		System.out.println("reimbursement deleted");
 
-		transaction1.commit();
+		transaction.commit();
 		System.out.println("reimbursment committed");
 
-		session1.close();
+		session.close();
 		System.out.println("closed");
+	}
 
-		// -------------------------------------------------------------------------------------------------
+	// -------------------------------------------------------------------------------------------------
 
-		SessionFactory sessionFactory2 = HibernateUtil.getSessionFactory();
+	{
+		SessionFactory sessionFactory = HibernateUtil.getSessionFactory();
 
-		Session session2 = sessionFactory2.openSession();
+		Session session = sessionFactory.openSession();
 
-		Transaction transaction2 = session2.beginTransaction();
+		Transaction transaction = session.beginTransaction();
 
-		ReimbursementEntity updateReim = new ReimbursementEntity(7, 2, 4, 1, "2020-11-11", BigDecimal.ZERO, "travel",
+		ReimbursementEntity updateReim = new ReimbursementEntity(7, 2, 4, 1, DateFormat.getDateInstance(), BigDecimal.ZERO, "travel",
 				"expedia");
 
-		session2.update(updateReim);
+		session.update(updateReim);
 		System.out.println("reimbursement deleted");
 
-		transaction2.commit();
+		transaction.commit();
 		System.out.println("reimbursment committed");
 
-		session2.close();
+		session.close();
 		System.out.println("closed");
-		
-		//-----------------------------------------------------------------------------------------------
-		SessionFactory sessionFactory3 = HibernateUtil.getSessionFactory();
+	}
 
-		Session session3 = sessionFactory3.openSession();
+	// -----------------------------------------------------------------------------------------------
+	{
+		SessionFactory sessionFactory = HibernateUtil.getSessionFactory();
 
-		Transaction transaction3 = session3.beginTransaction();
+		Session session = sessionFactory.openSession();
 
-		ReimbursementEntity saveReim = new ReimbursementEntity(7, 2, 4, 1, "2020-11-11", BigDecimal.ZERO, "travel",
+		Transaction transaction = session.beginTransaction();
+
+		ReimbursementEntity saveReim = new ReimbursementEntity(7, 2, 4, 1, DateFormat.getDateInstance(), BigDecimal.ZERO, "travel",
 				"expedia");
 
-		session3.save(saveReim);
+		session.save(saveReim);
 		System.out.println("reimbursement deleted");
 
-		transaction3.commit();
+		transaction.commit();
 		System.out.println("reimbursment committed");
 
-		session3.close();
+		session.close();
 		System.out.println("closed");
-		
-		//-------------------------------------------------------------------------------------------
-		SessionFactory sessionFactory4 = HibernateUtil.getSessionFactory();
+	}
 
-		Session session4 = sessionFactory4.openSession();
+	// -------------------------------------------------------------------------------------------
+	{
+		SessionFactory sessionFactory = HibernateUtil.getSessionFactory();
 
-		Transaction transaction4 = session4.beginTransaction();
+		Session session = sessionFactory.openSession();
 
-		ReimbursementEntity fetchedReim = session4.find(ReimbursementEntity.class, 2);
+		Transaction transaction = session.beginTransaction();
+
+		ReimbursementEntity fetchedReim = session.find(ReimbursementEntity.class, 2);
 		System.out.println(fetchedReim);
 
-		transaction4.commit();
+		transaction.commit();
 		System.out.println(fetchedReim);
 
-		session4.close();
+		session.close();
 		System.out.println("closed");
 
 		HibernateUtil.shutdown();
 	}
+
+	{
+
+		{
+			SessionFactory sessionFactory = HibernateUtil.getSessionFactory();
+
+			Session session = sessionFactory.openSession();
+
+			Transaction transaction = session.beginTransaction();
+
+			String hqlQuery = "FROM ReimbursementEntity";
+			Query query = session.createQuery(hqlQuery);
+			List<ReimbursementEntity> allReimburements = query.getResultList();
+
+			allReimburements.forEach((reimbursement) -> System.out.println(reimbursement));
+
+			transaction.commit();
+			System.out.println("commited");
+
+			session.close();
+			System.out.println("closed");
+
+			HibernateUtil.shutdown();
+		}
+
+	}
 }
+
 	
 	
 	

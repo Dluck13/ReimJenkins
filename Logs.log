@@ -1558,3 +1558,198 @@
 2022-03-18 01:04:12 INFO  pooling:233 - HHH10001008: Cleaning up connection pool [jdbc:postgresql://localhost:5432/reimbursement_project]
 =======
 >>>>>>> main
+2022-03-19 19:18:07 INFO  Version:46 - HHH000412: Hibernate Core {5.3.7.Final}
+2022-03-19 19:18:07 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2022-03-19 19:18:08 INFO  Version:49 - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2022-03-19 19:18:08 WARN  pooling:73 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2022-03-19 19:18:08 INFO  pooling:129 - HHH10001005: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://localhost:5432/reimbursement_project]
+2022-03-19 19:18:08 INFO  pooling:138 - HHH10001001: Connection properties: {password=****, user=postgres}
+2022-03-19 19:18:08 INFO  pooling:143 - HHH10001003: Autocommit mode: false
+2022-03-19 19:18:08 INFO  DriverManagerConnectionProviderImpl:281 - HHH000115: Hibernate connection pool size: 1 (min=1)
+2022-03-19 19:18:08 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2022-03-19 19:18:09 INFO  LobCreatorBuilderImpl:124 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2022-03-19 19:18:09 INFO  BasicTypeRegistry:159 - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@435e60ff
+2022-03-19 19:18:09 INFO  access:47 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@22825e1e] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2022-03-19 19:18:09 INFO  pooling:233 - HHH10001008: Cleaning up connection pool [jdbc:postgresql://localhost:5432/reimbursement_project]
+2022-03-19 19:26:27 INFO  Version:46 - HHH000412: Hibernate Core {5.3.7.Final}
+2022-03-19 19:26:27 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2022-03-19 19:26:28 INFO  Version:49 - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2022-03-19 19:26:28 WARN  pooling:73 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2022-03-19 19:26:28 INFO  pooling:129 - HHH10001005: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://localhost:5432/reimbursement_project]
+2022-03-19 19:26:28 INFO  pooling:138 - HHH10001001: Connection properties: {password=****, user=postgres}
+2022-03-19 19:26:28 INFO  pooling:143 - HHH10001003: Autocommit mode: false
+2022-03-19 19:26:28 INFO  DriverManagerConnectionProviderImpl:281 - HHH000115: Hibernate connection pool size: 1 (min=1)
+2022-03-19 19:26:28 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2022-03-19 19:26:28 INFO  LobCreatorBuilderImpl:124 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2022-03-19 19:26:28 INFO  BasicTypeRegistry:159 - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@4715ae33
+2022-03-19 19:26:29 INFO  access:47 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@aa61e4e] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2022-03-19 19:26:29 INFO  pooling:233 - HHH10001008: Cleaning up connection pool [jdbc:postgresql://localhost:5432/reimbursement_project]
+2022-03-19 19:27:50 INFO  Version:46 - HHH000412: Hibernate Core {5.3.7.Final}
+2022-03-19 19:27:50 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2022-03-19 19:27:50 INFO  Version:49 - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2022-03-19 19:27:51 WARN  pooling:73 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2022-03-19 19:27:51 INFO  pooling:129 - HHH10001005: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://localhost:5432/reimbursement_project]
+2022-03-19 19:27:51 INFO  pooling:138 - HHH10001001: Connection properties: {password=****, user=postgres}
+2022-03-19 19:27:51 INFO  pooling:143 - HHH10001003: Autocommit mode: false
+2022-03-19 19:27:51 INFO  DriverManagerConnectionProviderImpl:281 - HHH000115: Hibernate connection pool size: 1 (min=1)
+2022-03-19 19:27:51 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2022-03-19 19:27:51 INFO  LobCreatorBuilderImpl:124 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2022-03-19 19:27:51 INFO  BasicTypeRegistry:159 - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@4715ae33
+2022-03-19 19:27:52 INFO  access:47 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@aa61e4e] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2022-03-19 19:27:52 INFO  pooling:233 - HHH10001008: Cleaning up connection pool [jdbc:postgresql://localhost:5432/reimbursement_project]
+2022-03-19 19:40:19 INFO  Version:46 - HHH000412: Hibernate Core {5.3.7.Final}
+2022-03-19 19:40:19 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2022-03-19 19:40:19 INFO  Version:49 - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2022-03-19 19:40:20 WARN  pooling:73 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2022-03-19 19:40:20 INFO  pooling:129 - HHH10001005: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://localhost:5432/reimbursement_project]
+2022-03-19 19:40:20 INFO  pooling:138 - HHH10001001: Connection properties: {password=****, user=postgres}
+2022-03-19 19:40:20 INFO  pooling:143 - HHH10001003: Autocommit mode: false
+2022-03-19 19:40:20 INFO  DriverManagerConnectionProviderImpl:281 - HHH000115: Hibernate connection pool size: 1 (min=1)
+2022-03-19 19:40:20 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2022-03-19 19:40:20 INFO  LobCreatorBuilderImpl:124 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2022-03-19 19:40:20 INFO  BasicTypeRegistry:159 - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@7a8406c2
+2022-03-19 19:40:20 INFO  access:47 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@4ef4f627] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2022-03-19 19:40:21 INFO  pooling:233 - HHH10001008: Cleaning up connection pool [jdbc:postgresql://localhost:5432/reimbursement_project]
+2022-03-19 19:57:34 INFO  Version:46 - HHH000412: Hibernate Core {5.3.7.Final}
+2022-03-19 19:57:34 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2022-03-19 19:57:35 INFO  Version:49 - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2022-03-19 19:57:35 WARN  pooling:73 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2022-03-19 19:57:35 INFO  pooling:129 - HHH10001005: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://localhost:5432/reimbursement_project]
+2022-03-19 19:57:35 INFO  pooling:138 - HHH10001001: Connection properties: {password=****, user=postgres}
+2022-03-19 19:57:35 INFO  pooling:143 - HHH10001003: Autocommit mode: false
+2022-03-19 19:57:35 INFO  DriverManagerConnectionProviderImpl:281 - HHH000115: Hibernate connection pool size: 1 (min=1)
+2022-03-19 19:57:35 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2022-03-19 19:57:35 INFO  LobCreatorBuilderImpl:124 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2022-03-19 19:57:35 INFO  BasicTypeRegistry:159 - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@2a2ef072
+2022-03-19 19:57:36 INFO  access:47 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@4ea56bdb] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2022-03-19 19:57:36 INFO  pooling:233 - HHH10001008: Cleaning up connection pool [jdbc:postgresql://localhost:5432/reimbursement_project]
+2022-03-19 19:58:25 INFO  Version:46 - HHH000412: Hibernate Core {5.3.7.Final}
+2022-03-19 19:58:25 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2022-03-19 19:58:25 INFO  Version:49 - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2022-03-19 19:58:25 WARN  pooling:73 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2022-03-19 19:58:25 INFO  pooling:129 - HHH10001005: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://localhost:5432/reimbursement_project]
+2022-03-19 19:58:25 INFO  pooling:138 - HHH10001001: Connection properties: {password=****, user=postgres}
+2022-03-19 19:58:25 INFO  pooling:143 - HHH10001003: Autocommit mode: false
+2022-03-19 19:58:25 INFO  DriverManagerConnectionProviderImpl:281 - HHH000115: Hibernate connection pool size: 1 (min=1)
+2022-03-19 19:58:26 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2022-03-19 19:58:26 INFO  LobCreatorBuilderImpl:124 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2022-03-19 19:58:26 INFO  BasicTypeRegistry:159 - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@741f8dbe
+2022-03-19 19:58:26 INFO  access:47 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@2d258eff] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2022-03-19 19:58:26 INFO  pooling:233 - HHH10001008: Cleaning up connection pool [jdbc:postgresql://localhost:5432/reimbursement_project]
+2022-03-19 20:11:39 INFO  Version:46 - HHH000412: Hibernate Core {5.3.7.Final}
+2022-03-19 20:11:39 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2022-03-19 20:11:40 INFO  Version:49 - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2022-03-19 20:11:40 WARN  pooling:73 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2022-03-19 20:11:40 INFO  pooling:129 - HHH10001005: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://localhost:5432/reimbursement_project]
+2022-03-19 20:11:40 INFO  pooling:138 - HHH10001001: Connection properties: {password=****, user=postgres}
+2022-03-19 20:11:40 INFO  pooling:143 - HHH10001003: Autocommit mode: false
+2022-03-19 20:11:40 INFO  DriverManagerConnectionProviderImpl:281 - HHH000115: Hibernate connection pool size: 1 (min=1)
+2022-03-19 20:11:40 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2022-03-19 20:11:40 INFO  LobCreatorBuilderImpl:124 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2022-03-19 20:11:40 INFO  BasicTypeRegistry:159 - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@7c251f90
+2022-03-19 20:11:41 INFO  access:47 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@285005b8] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2022-03-19 20:11:41 INFO  pooling:233 - HHH10001008: Cleaning up connection pool [jdbc:postgresql://localhost:5432/reimbursement_project]
+2022-03-19 20:13:19 INFO  Version:46 - HHH000412: Hibernate Core {5.3.7.Final}
+2022-03-19 20:13:19 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2022-03-19 20:13:19 INFO  Version:49 - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2022-03-19 20:13:19 WARN  pooling:73 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2022-03-19 20:13:19 INFO  pooling:129 - HHH10001005: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://localhost:5432/reimbursement_project]
+2022-03-19 20:13:19 INFO  pooling:138 - HHH10001001: Connection properties: {password=****, user=postgres}
+2022-03-19 20:13:19 INFO  pooling:143 - HHH10001003: Autocommit mode: false
+2022-03-19 20:13:19 INFO  DriverManagerConnectionProviderImpl:281 - HHH000115: Hibernate connection pool size: 1 (min=1)
+2022-03-19 20:13:19 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2022-03-19 20:13:19 INFO  LobCreatorBuilderImpl:124 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2022-03-19 20:13:19 INFO  BasicTypeRegistry:159 - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@1fac1d5c
+2022-03-19 20:13:20 INFO  access:47 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@5f726750] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2022-03-19 20:13:20 INFO  pooling:233 - HHH10001008: Cleaning up connection pool [jdbc:postgresql://localhost:5432/reimbursement_project]
+2022-03-19 20:15:21 INFO  Version:46 - HHH000412: Hibernate Core {5.3.7.Final}
+2022-03-19 20:15:21 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2022-03-19 20:15:21 INFO  Version:49 - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2022-03-19 20:15:21 WARN  pooling:73 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2022-03-19 20:15:21 INFO  pooling:129 - HHH10001005: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://localhost:5432/reimbursement_project]
+2022-03-19 20:15:21 INFO  pooling:138 - HHH10001001: Connection properties: {password=****, user=postgres}
+2022-03-19 20:15:21 INFO  pooling:143 - HHH10001003: Autocommit mode: false
+2022-03-19 20:15:21 INFO  DriverManagerConnectionProviderImpl:281 - HHH000115: Hibernate connection pool size: 1 (min=1)
+2022-03-19 20:15:22 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2022-03-19 20:15:22 INFO  LobCreatorBuilderImpl:124 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2022-03-19 20:15:22 INFO  BasicTypeRegistry:159 - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@1fac1d5c
+2022-03-19 20:15:22 INFO  access:47 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@5f726750] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2022-03-19 20:15:22 INFO  pooling:233 - HHH10001008: Cleaning up connection pool [jdbc:postgresql://localhost:5432/reimbursement_project]
+2022-03-19 20:16:30 INFO  Version:46 - HHH000412: Hibernate Core {5.3.7.Final}
+2022-03-19 20:16:30 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2022-03-19 20:16:30 INFO  Version:49 - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2022-03-19 20:16:30 WARN  pooling:73 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2022-03-19 20:16:30 INFO  pooling:129 - HHH10001005: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://localhost:5432/reimbursement_project]
+2022-03-19 20:16:30 INFO  pooling:138 - HHH10001001: Connection properties: {password=****, user=postgres}
+2022-03-19 20:16:30 INFO  pooling:143 - HHH10001003: Autocommit mode: false
+2022-03-19 20:16:30 INFO  DriverManagerConnectionProviderImpl:281 - HHH000115: Hibernate connection pool size: 1 (min=1)
+2022-03-19 20:16:30 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2022-03-19 20:16:30 INFO  LobCreatorBuilderImpl:124 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2022-03-19 20:16:30 INFO  BasicTypeRegistry:159 - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@6850b758
+2022-03-19 20:16:31 INFO  access:47 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@1c30cb85] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2022-03-19 20:16:31 INFO  pooling:233 - HHH10001008: Cleaning up connection pool [jdbc:postgresql://localhost:5432/reimbursement_project]
+2022-03-19 20:16:43 INFO  Version:46 - HHH000412: Hibernate Core {5.3.7.Final}
+2022-03-19 20:16:43 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2022-03-19 20:16:43 INFO  Version:49 - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2022-03-19 20:16:44 WARN  pooling:73 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2022-03-19 20:16:44 INFO  pooling:129 - HHH10001005: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://localhost:5432/reimbursement_project]
+2022-03-19 20:16:44 INFO  pooling:138 - HHH10001001: Connection properties: {password=****, user=postgres}
+2022-03-19 20:16:44 INFO  pooling:143 - HHH10001003: Autocommit mode: false
+2022-03-19 20:16:44 INFO  DriverManagerConnectionProviderImpl:281 - HHH000115: Hibernate connection pool size: 1 (min=1)
+2022-03-19 20:16:44 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2022-03-19 20:16:44 INFO  LobCreatorBuilderImpl:124 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2022-03-19 20:16:44 INFO  BasicTypeRegistry:159 - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@741f8dbe
+2022-03-19 20:16:45 INFO  access:47 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@40bf4386] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2022-03-19 20:16:45 INFO  pooling:233 - HHH10001008: Cleaning up connection pool [jdbc:postgresql://localhost:5432/reimbursement_project]
+2022-03-19 20:17:17 INFO  Version:46 - HHH000412: Hibernate Core {5.3.7.Final}
+2022-03-19 20:17:17 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2022-03-19 20:17:17 INFO  Version:49 - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2022-03-19 20:17:17 WARN  pooling:73 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2022-03-19 20:17:17 INFO  pooling:129 - HHH10001005: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://localhost:5432/reimbursement_project]
+2022-03-19 20:17:17 INFO  pooling:138 - HHH10001001: Connection properties: {password=****, user=postgres}
+2022-03-19 20:17:17 INFO  pooling:143 - HHH10001003: Autocommit mode: false
+2022-03-19 20:17:17 INFO  DriverManagerConnectionProviderImpl:281 - HHH000115: Hibernate connection pool size: 1 (min=1)
+2022-03-19 20:17:17 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2022-03-19 20:17:17 INFO  LobCreatorBuilderImpl:124 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2022-03-19 20:17:17 INFO  BasicTypeRegistry:159 - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@1fac1d5c
+2022-03-19 20:17:18 INFO  access:47 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@5f726750] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2022-03-19 20:17:18 INFO  pooling:233 - HHH10001008: Cleaning up connection pool [jdbc:postgresql://localhost:5432/reimbursement_project]
+2022-03-19 20:18:46 INFO  Version:46 - HHH000412: Hibernate Core {5.3.7.Final}
+2022-03-19 20:18:46 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2022-03-19 20:18:46 INFO  Version:49 - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2022-03-19 20:18:46 WARN  pooling:73 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2022-03-19 20:18:46 INFO  pooling:129 - HHH10001005: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://localhost:5432/reimbursement_project]
+2022-03-19 20:18:46 INFO  pooling:138 - HHH10001001: Connection properties: {password=****, user=postgres}
+2022-03-19 20:18:46 INFO  pooling:143 - HHH10001003: Autocommit mode: false
+2022-03-19 20:18:46 INFO  DriverManagerConnectionProviderImpl:281 - HHH000115: Hibernate connection pool size: 1 (min=1)
+2022-03-19 20:18:46 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2022-03-19 20:18:46 INFO  LobCreatorBuilderImpl:124 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2022-03-19 20:18:46 INFO  BasicTypeRegistry:159 - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@1fac1d5c
+2022-03-19 20:18:47 INFO  access:47 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@5f726750] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2022-03-19 20:18:47 INFO  pooling:233 - HHH10001008: Cleaning up connection pool [jdbc:postgresql://localhost:5432/reimbursement_project]
+2022-03-19 20:19:10 INFO  Version:46 - HHH000412: Hibernate Core {5.3.7.Final}
+2022-03-19 20:19:10 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2022-03-19 20:19:10 INFO  Version:49 - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2022-03-19 20:19:10 WARN  pooling:73 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2022-03-19 20:19:10 INFO  pooling:129 - HHH10001005: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://localhost:5432/reimbursement_project]
+2022-03-19 20:19:10 INFO  pooling:138 - HHH10001001: Connection properties: {password=****, user=postgres}
+2022-03-19 20:19:10 INFO  pooling:143 - HHH10001003: Autocommit mode: false
+2022-03-19 20:19:10 INFO  DriverManagerConnectionProviderImpl:281 - HHH000115: Hibernate connection pool size: 1 (min=1)
+2022-03-19 20:19:10 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2022-03-19 20:19:11 INFO  LobCreatorBuilderImpl:124 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2022-03-19 20:19:11 INFO  BasicTypeRegistry:159 - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@741f8dbe
+2022-03-19 20:19:11 INFO  access:47 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@40bf4386] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2022-03-19 20:19:11 INFO  pooling:233 - HHH10001008: Cleaning up connection pool [jdbc:postgresql://localhost:5432/reimbursement_project]
+2022-03-19 20:31:13 INFO  Version:46 - HHH000412: Hibernate Core {5.3.7.Final}
+2022-03-19 20:31:13 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2022-03-19 20:31:13 INFO  Version:49 - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2022-03-19 20:31:13 WARN  pooling:73 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2022-03-19 20:31:13 INFO  pooling:129 - HHH10001005: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://localhost:5432/reimbursement_project]
+2022-03-19 20:31:13 INFO  pooling:138 - HHH10001001: Connection properties: {password=****, user=postgres}
+2022-03-19 20:31:13 INFO  pooling:143 - HHH10001003: Autocommit mode: false
+2022-03-19 20:31:13 INFO  DriverManagerConnectionProviderImpl:281 - HHH000115: Hibernate connection pool size: 1 (min=1)
+2022-03-19 20:31:13 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2022-03-19 20:31:13 INFO  LobCreatorBuilderImpl:124 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2022-03-19 20:31:13 INFO  BasicTypeRegistry:159 - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@6daf7d37
+2022-03-19 20:31:14 INFO  access:47 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@4fba8eec] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2022-03-19 20:31:14 INFO  pooling:233 - HHH10001008: Cleaning up connection pool [jdbc:postgresql://localhost:5432/reimbursement_project]
