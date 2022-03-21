@@ -1,7 +1,6 @@
 /DAO/
-/META-INF/
+/Entity/
+/Exceptions/
 /POJO/
 /Service/
-/Entity/
-/HibernateUtil.class
-/ReimbursementMain.class
+/META-INF/

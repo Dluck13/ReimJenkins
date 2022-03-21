@@ -32,6 +32,8 @@ public class DBConnection {
 				// Dimitri, place your DB password and connection string here so the backend will also work for on your side
 				password = "Samara-13";
 				connectionString = "jdbc:postgresql://localhost:5432/reimbursement_project";
+				//change connection string to jdbc:postgresql://192.168.0.116:8888/reimbursement_project 
+				
 				conn = DriverManager.getConnection(connectionString,userName,password);
 			}
 			catch(SQLException e2)
