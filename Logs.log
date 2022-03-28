@@ -1753,3 +1753,16 @@
 2022-03-19 20:31:13 INFO  BasicTypeRegistry:159 - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@6daf7d37
 2022-03-19 20:31:14 INFO  access:47 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@4fba8eec] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
 2022-03-19 20:31:14 INFO  pooling:233 - HHH10001008: Cleaning up connection pool [jdbc:postgresql://localhost:5432/reimbursement_project]
+2022-03-22 17:11:41 INFO  Version:46 - HHH000412: Hibernate Core {5.3.7.Final}
+2022-03-22 17:11:41 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2022-03-22 17:11:41 INFO  Version:49 - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2022-03-22 17:11:42 WARN  pooling:73 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2022-03-22 17:11:42 INFO  pooling:129 - HHH10001005: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://localhost:5432/reimbursement_project]
+2022-03-22 17:11:42 INFO  pooling:138 - HHH10001001: Connection properties: {password=****, user=postgres}
+2022-03-22 17:11:42 INFO  pooling:143 - HHH10001003: Autocommit mode: false
+2022-03-22 17:11:42 INFO  DriverManagerConnectionProviderImpl:281 - HHH000115: Hibernate connection pool size: 1 (min=1)
+2022-03-22 17:11:42 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2022-03-22 17:11:42 INFO  LobCreatorBuilderImpl:124 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2022-03-22 17:11:42 INFO  BasicTypeRegistry:159 - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@1fac1d5c
+2022-03-22 17:11:43 INFO  access:47 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@73ca34e7] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2022-03-22 17:11:43 INFO  pooling:233 - HHH10001008: Cleaning up connection pool [jdbc:postgresql://localhost:5432/reimbursement_project]
